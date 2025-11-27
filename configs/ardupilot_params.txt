@@ -1,0 +1,3 @@
+# Example ArduPilot params (minimal)
+WP_RADIUS = 2
+SIM_SPEEDUP = 1

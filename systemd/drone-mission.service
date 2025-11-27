@@ -1,0 +1,13 @@
+[Unit]
+Description=Drone mission service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/drone_automation_full_repo
+ExecStart=/home/ubuntu/venv/bin/python /home/ubuntu/drone_automation_full_repo/mission/mission.py --connect /dev/ttyAMA0
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

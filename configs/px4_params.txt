@@ -1,0 +1,4 @@
+# Example PX4 params (minimal)
+MC_PITCH_P = 6.0
+MC_ROLL_P = 6.0
+MC_YAW_P = 4.5
